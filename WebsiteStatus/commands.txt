@@ -1,0 +1,7 @@
+﻿powershell
+
+sc.exe create CacheService DisplayName="Demo Service" binpath= c:\temp\workerservice\xxx.exe start= auto
+
+sc.exe delete CacheService
+
+sc.exe start/stop _name_
